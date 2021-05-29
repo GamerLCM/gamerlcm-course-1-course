@@ -1,0 +1,16 @@
+title: 'GamerLCM Course #1'
+description: cool course
+template:
+  repo: gamerlcm-course-1-template
+  name: gamerlcm-course-1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
